@@ -1,0 +1,17 @@
+
+### Step-by-Step Guide
+
+Follow these steps to run your analysis:
+
+1. **Download *E. coli* data from NCBI**
+
+   Visit [NCBI](https://www.ncbi.nlm.nih.gov/) and search for *E. coli* data sets. Download your dataset of interest.
+
+2. **Run it through kofamscan**
+
+   First, clone the kofamscan repository and follow its installation instructions:
+
+   ```bash
+   git clone https://github.com/takaram/kofam_scan.git
+   cd kofam_scan
+   # Follow the installation instructions in the repository
