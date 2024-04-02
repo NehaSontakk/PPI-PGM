@@ -12,7 +12,7 @@ Follow these steps to run your analysis:
    Clone the [kofamscan](https://github.com/takaram/kofam_scan) repository 
 
    ```bash
-   ./exec_kofamscan -f <path_to_your_E_coli_data>
+   ./home/u13/nsontakke/miniconda3/envs/kofamscan_env/bin/exec_annotation/exec_kofamscan -f <path_to_your_E_coli_data>
 
 3. **Run kofamscan output through MetaPathPredict**
 
