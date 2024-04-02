@@ -5,7 +5,7 @@ Follow these steps to run your analysis:
 
 1. **Download *E. coli* data from NCBI**
 
-   Visit [NCBI](https://www.ncbi.nlm.nih.gov/) and search for *E. coli* data sets. Download your dataset of interest.
+   Visit [NCBI](https://www.ncbi.nlm.nih.gov/) and search for [*E. coli*](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Escherichia_coli/reference/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_cds_from_genomic.fna.gz) data sets.
 
 2. **Run it through kofamscan**
 
