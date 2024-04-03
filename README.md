@@ -17,7 +17,7 @@ Follow these steps to run your analysis:
 
    ```bash
    conda activate kofamscan-env
-   /home/u13/nsontakke/miniconda3/envs/kofamscan_env/bin/exec_annotation -k /xdisk/twheeler/nsontakke/GapFilling/kofamscan_input/ko_list -o /xdisk/twheeler/nsontakke/GapFilling/Ecoli_Data/KO_GCF_000005845.2_ASM584v2.txt /xdisk/twheeler/nsontakke/GapFilling/Ecoli_Data/GCF_000005845.2_ASM584v2_cds_from_genomic.fna
+   /home/u13/nsontakke/miniconda3/envs/kofamscan_env/bin/exec_annotation --cpu=8 -k /xdisk/twheeler/nsontakke/GapFilling/kofamscan_input/ko_list -o /xdisk/twheeler/nsontakke/GapFilling/Ecoli_Data/KO_GCF_000005845.2_ASM584v2.txt /xdisk/twheeler/nsontakke/GapFilling/Ecoli_Data/GCF_000005845.2_ASM584v2_cds_from_genomic.fna
 
 4. **Run kofamscan output through MetaPathPredict**
 
