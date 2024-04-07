@@ -24,5 +24,4 @@ Follow these steps to run your analysis:
    Clone the MetaPathPredict repository and set it up.
    ```bash
    conda activate MetaPathPredict
-   MetaPathPredict [-h] --input INPUT [INPUT ...] --annotation-format ANNOTATION_FORMAT
-                       [--kegg-modules KEGG_MODULES [KEGG_MODULES ...]] --output OUTPUT
+   MetaPathPredict --input /xdisk/twheeler/nsontakke/GapFilling/kofamscan_output/Ecoli_kofamscan_output.txt --annotation-format kofamscan --output Ecoli_Metapath.tsv
