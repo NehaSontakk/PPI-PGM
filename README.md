@@ -1,6 +1,22 @@
 
 ### Step-by-Step Guide
 
+1. Using FOAM with BATH
+2. Running MetaPathPredict with kofamscan
+3. Preliminary Output Analysis
+4. Comparing pathways 
+
+### Installations
+
+1. MPP
+2. kofamscan
+3. Bathsearch
+
+### Databases
+
+1. FOAM
+
+ECOLI EXPTS SEPERATE:
 Follow these steps to run your analysis:
 
 1. **Download *E. coli* data from NCBI**
