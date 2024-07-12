@@ -2,9 +2,12 @@
 ### Step-by-Step Guide
 
 1. Using FOAM with BATH
+      - Bathconvert FOAM HMMs to BHMMs
 2. Running MetaPathPredict with kofamscan
-3. Preliminary Output Analysis
-4. Comparing pathways 
+      - config.yml specifications for ko_list and profiles db
+      - sbatch /xdisk/twheeler/nsontakke/GapFilling/MPP_Jul24/Scripts/run_kofamscan_metapath.sh (Convert .fna file to MPP format, also uses .py script, run MPP on file to generate .tsv)
+4. Preliminary Output Analysis
+5. Comparing pathways 
 
 ### Installations
 
