@@ -1,3 +1,12 @@
+import sys
+
+# Ensure that a filename is provided as a command-line argument
+if len(sys.argv) < 2:
+    print("Usage: python kofam_to_mpp_format_conversion.py <filename>")
+    sys.exit(1)
+
+filename = sys.argv[1]
+
 # -*- coding: utf-8 -*-
 """kofam_to_mpp_format_conversion
 
@@ -8,7 +17,7 @@ Original file is located at
 """
 
 # Read the original lines from the uploaded file
-with open('Ecoli_kofamscan_output.txt', 'r') as file:
+with open(filename, 'r') as file:
     original_lines = file.readlines()
 
 header_line_1 = "#\tgene_name\tKO\tthreshold\tscore\tE-value\tKO_definition\n"
@@ -19,16 +28,15 @@ for line in original_lines[2:]:
     parts = line.strip().split(maxsplit=5)
 
     # Assume the last part is the KO definition and may contain multiple columns
-    parts[-1] = parts[-1].replace(' ', '\t', 1)  # Replace the first space with underscore to maintain two columns only
+    parts[-1] = parts[-1].replace(' ', '\t', 1)  # Replace the first space with a tab to maintain two columns only
     # Join the parts back with a tab separator and add a newline
     output_line = '\t'.join(parts) + '\n'
     # Append the processed line to the output content
     output_content.append(output_line)
 
-# Write the output content to a TSV file
-output_file_path_final = 'Ecoli_kofamscan_output.tsv'
-with open(output_file_path_final, 'w') as file:
+# Define the output filename based on the input filename
+output_filename = filename.replace('.txt', '.tsv')
+with open(output_filename, 'w') as file:
     file.writelines(output_content)
 
-output_file_path_final
-
+print(f"Output written to {output_filename}")
