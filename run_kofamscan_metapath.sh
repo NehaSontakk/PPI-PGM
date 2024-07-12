@@ -20,12 +20,11 @@ source /home/u13/nsontakke/miniconda3/etc/profile.d/conda.sh
 # Activate kofamscan environment and run kofamscan
 echo "Activating kofamscan-env and executing kofamscan..."
 conda activate kofamscan-env
- exec_annotation --cpu=8 \
-> -p $COMMON_PATH/kofamscan_input/profiles \
-> -k $COMMON_PATH/kofamscan_input/ko_list \
-> -o $COMMON_PATH/kofamscan_output_bin.82.fa.txt \
-> /xdisk/twheeler/nsontakke/GapFilling/bin.82.fa.fna
+exec_annotation --cpu=8 \
+-o $COMMON_PATH/kofamscan_output_bin.82.fa.txt \
+/xdisk/twheeler/nsontakke/GapFilling/bin.82.fa.fna
 echo "Kofamscan processing completed."
+
 
 echo "Running file conversion..."
 python $COMMON_PATH/Scripts/kofam_to_mpp_format_conversion.py $COMMON_PATH/kofamscan_output_bin.82.fa.txt
