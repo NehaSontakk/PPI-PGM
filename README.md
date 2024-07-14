@@ -8,6 +8,10 @@
       - config.yml specifications for ko_list and profiles db
       -       sbatch /xdisk/twheeler/nsontakke/GapFilling/MPP_Jul24/Scripts/run_kofamscan_metapath.sh
       -   (Convert .fna file to MPP format, also uses kofam_to_mpp_format_conversion.py script, run MPP on file to generate .tsv)
+      -   kofamscan/ kofamkoala uses HMMs made from KEGG modules to find modules in amino acid sequences.
+      -   Where do I get amino acids from?
+      - - BATH using TIGRFAM or something on bin82 data
+        - Prokka .faa file which I already have available?
 4. Preliminary Output Analysis
 5. Comparing pathways 
 
