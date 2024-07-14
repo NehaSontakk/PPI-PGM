@@ -3,9 +3,11 @@
 
 1. Using FOAM with BATH
       - Bathconvert FOAM HMMs to BHMMs
+      -       /xdisk/twheeler/nsontakke/GapFilling/FOAM_BATH_Jul24/Scripts/bathconvert_foam.sh 
 2. Running MetaPathPredict with kofamscan
       - config.yml specifications for ko_list and profiles db
-      - sbatch /xdisk/twheeler/nsontakke/GapFilling/MPP_Jul24/Scripts/run_kofamscan_metapath.sh (Convert .fna file to MPP format, also uses kofam_to_mpp_format_conversion.py script, run MPP on file to generate .tsv)
+      -       sbatch /xdisk/twheeler/nsontakke/GapFilling/MPP_Jul24/Scripts/run_kofamscan_metapath.sh
+      -   (Convert .fna file to MPP format, also uses kofam_to_mpp_format_conversion.py script, run MPP on file to generate .tsv)
 4. Preliminary Output Analysis
 5. Comparing pathways 
 
