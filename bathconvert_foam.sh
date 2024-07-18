@@ -4,7 +4,7 @@
 #SBATCH --mem-per-cpu=4GB
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
-#SBATCH --time=32:00:00
+#SBATCH --time=64:00:00
 #SBATCH --account=twheeler
 #SBATCH --partition=standard
 
