@@ -3,7 +3,12 @@
 
 1. Using FOAM with BATH
       - Bathconvert FOAM HMMs to BHMMs
-      -       /xdisk/twheeler/nsontakke/GapFilling/FOAM_BATH_Jul24/Scripts/bathconvert_foam.sh 
+      -       /xdisk/twheeler/nsontakke/GapFilling/FOAM_BATH_Jul24/Scripts/bathconvert_foam.sh
+      -   Concatenate the files
+      -         for file in FOAM_BATH_HMMs_Jul24/*.bhmm; do
+                cat "$file" >> ALL_FOAM_BHMMs_1Aug24.bhmm
+                done
+
 2. Running MetaPathPredict with kofamscan
       - config.yml specifications for ko_list and profiles db
       -       sbatch /xdisk/twheeler/nsontakke/GapFilling/MPP_Jul24/Scripts/run_kofamscan_metapath.sh
